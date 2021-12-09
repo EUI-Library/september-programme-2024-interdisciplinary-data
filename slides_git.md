@@ -11,6 +11,7 @@ Library #researchskills session 01/12/2021
 
 
 ---
+
 ## Before we start
 
 ----
@@ -22,6 +23,7 @@ Library #researchskills session 01/12/2021
 * How many of you are already using Git/GitHub to track changes in your research?
 
 ----
+
 ### Cautionary note
 
 * This training is very much at the introductory level and many details are intentionally skipped.
@@ -57,7 +59,6 @@ Library #researchskills session 01/12/2021
 
 This is basis for code development, how about research?
 
-
 ----
 
 ### Do you recognise yourself?
@@ -65,6 +66,7 @@ This is basis for code development, how about research?
 ![PhD comic: "Final".doc - files are called: Final.doc, Final_rev.2.doc, FINAL_rev.6.COMMENTS.doc, FINAL_rev.8.commens5.CORRECTIONS.doc, FINAL_rev.18.comment7.corrections9.MORE.30.doc, FINAL_rev.22.comments49.corrections.10.WHYDIDICOMETOGRADSCHOOL.doc](img/phd101212s_small.gif)
 
 PhD Comics [FINAL.doc](https://phdcomics.com/comics/archive.php?comicid=1531)
+
 ---
 
 ## Version control with `git`
@@ -144,6 +146,7 @@ Well, fist of all you need to install Git on your computer!
 [Follow these instructions](https://docs.github.com/en/get-started/quickstart/set-up-git)
 
 [...well, attempt now or do it later, but follow the course!]
+
 ----
 
 ### Setting global options
@@ -164,11 +167,13 @@ $ git config --global core.editor "vim"
 $ git config --global init.defaultBranch main
 ```
 ----
+
 ### Check global options
 * You can check your settings at any time:
 ```
 $ git config --list
 ```
+
 ---
 
 ## Creating a repository
@@ -347,6 +352,7 @@ Use  `git log` to check the history of commits:
 ```
 $ git log
 ```
+
 ----
 
 
@@ -433,6 +439,7 @@ cd planets
 git init
 ```
 **Live Presentation**
+
 ----
 
 ### A freshly-made GitHub repository
@@ -457,11 +464,14 @@ git remote add origin git@github.com:simosacchi/planets.git
 git push origin main
 git remote -v
 ```
+
 ----
+
 ### SSH Key authentication on Github
 WARNING: Since 13 August 2021 Github requires an SSH Key to push to a remote.
 
 Details on how to setup a key on your machine are available here: https://librarycarpentry.org/lc-git/03-sharing/index.html#ssh-background-and-setup
+
 ----
 
 ### Remote GitHub repo after first *push*
@@ -491,12 +501,16 @@ git pull origin main
 * Your first and foremost collaborator is your future self
 * ...or yourself on a different machine!
 * The same perspective applies when you work with others
+
 ----
+
 ### Github as the hub for collaboration
 
 * Keep changes in sync across (different) contributors working on different computers with local repositories
 * Manage conflicts across versions
+
 ----
+
 ### Why conflicts occur
 
 * People working in parallel
@@ -550,6 +564,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 
 ----
+
 ### A traditional story
 > * A scientist **collects some data** and stores it on a machine that is occasionally backed up by her department. She then **writes or modifies a few small programs** (which also reside on her machine) to analyze that data. Once she has some results, **she writes them up and submits her paper**. She might include her data – a growing number of journals require this – but she probably doesn’t include her code.
 >
@@ -562,6 +577,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 > * **The paper is eventually published**. It might include a link to an online copy of her data, but the paper itself will be behind a paywall: only people who have personal or institutional access will be able to read it.
 
 ----
+
 ### A revised approach
 
 > * The data that the researcher collects is stored in an **open access repository** (e.g. [Zenodo](https://zenodo.org/) or [FigShare](https://figshare.com/)), possibly as soon as it’s collected, and given its own **Digital Object Identifier (DOI)**.
@@ -573,6 +589,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 > * **The published paper includes links to her preprint and to her code and data repositories**, which makes it much easier for other scientists to use her work as starting point for their own research.
 
 ----
+
 ### Takeaways
 
 * GitHub/version control can be an open electronic lab book as part of Open Science workflows
@@ -587,7 +604,9 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ![PhD comic: A directory listing with filenames like data_2010.05.28_test.dat, data_2010.05.28_re-test.dat, data_2010.05.28_re-re-test.dat, data_2010.05.28_calibrate.dat, data_2010.05.29_aaarrrgh.dat, data_2010.05.29_WTF.dat, data_2010.05.29_USETHISONE.dat](img/phd052810s.png)
 
 ---
+
 ## Questions?
+
 ---
 
 ## Acknowledgement
@@ -609,6 +628,7 @@ These slides are released under a Creative Commons Attribution International 4.0
 ## Extra stuff
 
 ----
+
 Dracula also has to set his favorite text editor, following this table:
 
 | Editor             | Configuration command                            |
