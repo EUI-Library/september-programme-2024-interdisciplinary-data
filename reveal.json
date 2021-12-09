@@ -3,5 +3,6 @@
   "progress": true,
   "slideNumber": false,
   "margin": 0.1,
-  "width": 1240
+  "width": 1280,
+  "height": 800
 }
