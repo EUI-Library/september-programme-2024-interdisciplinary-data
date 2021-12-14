@@ -566,7 +566,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ----
 
 ### A traditional story
-> * A scientist **collects some data** and stores it on a machine that is occasionally backed up by her department. She then **writes or modifies a few small programs** (which also reside on her machine) to analyze that data. Once she has some results, **she writes them up and submits her paper**. She might include her data – a growing number of journals require this – but she probably doesn’t include her code.
+> * A scientist **collects some data** and stores it on a machine that is occasionally backed up by her department. She then **writes or modifies a few small programs** (which also reside on her machine) to analyze that data. Once she has some results, **she writes them up and submits her paper**. She might include her data – a growing number of journals require this – but she probably doesn’t include her code. 
 >
 > Time passes…
 >
