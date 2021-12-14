@@ -2,6 +2,12 @@
 
 The training was led by Simone Sacchi
 
+These slides are released under a [Creative Commons Attribution International 4.0](https://creativecommons.org/licenses/by/4.0/) licence. Any feedback and reuse of content is welcome!
+
+* Web version: [https://eui-library.github.io/researchskills-2021-12-01-git/](https://eui-library.github.io/researchskills-2021-12-01-git/)
+* GitHub repo: [https://github.com/EUI-Library/researchskills-2021-12-01-git](https://github.com/EUI-Library/researchskills-2021-12-01-git)
+
+## Acknowledgement
 These slides are based on:
 * Leighton Pritchard [SWC Lessons](https://github.com/widdowquinn/Teaching-SWC-Lessons)
 * Library Carpentry: [Introduction to Git](https://librarycarpentry.org/lc-git/)
