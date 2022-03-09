@@ -1,4 +1,20 @@
-## Introduction to Git and GitHub for social science research
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="/_assets/theme/eui.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">## Introduction to Git and GitHub for social science research
 #### or, track changes to your research in an efficient and effective way
 
 
@@ -9,33 +25,23 @@ Simone Sacchi, Open Science Librarian
 Library #researchskills session 09/03/2022
 
 
-
----
-
+</script></section><section ><section data-markdown><script type="text/template">
 ## Before we start
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Let's make a round of introductions
 
 * How many of you are already familiar with Git/GitHub and/or other so called "version control" systems?
 * How many of you have already installed Git on your computer?
 * How many of you are already using Git/GitHub to track changes in your research?
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Cautionary note
 
 * This training is very much at the introductory level and many details are intentionally skipped.
 * Most of the examples assume a Unix/Linux (and Mac) command-line environment  but everything can be easily replicated in Windows and/or using a Git GUI
 * Git can be fully taken advantage of when working with textual files but all kinds of files can be tracked!
-
----
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Let me tell you a story...
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Once upon a time...
 
 * Wolfman and Dracula were been hired to plan a Mars mission (obviously...)
@@ -45,9 +51,7 @@ Library #researchskills session 09/03/2022
   * take turns on each file?
   * email copies?
 * The solution? **Version Control**
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Advantage of version control
 
 * Nothing that is *committed* is *ever* lost (unless you try hard…)
@@ -58,35 +62,25 @@ Library #researchskills session 09/03/2022
 **Version control is like an unlimited ‘undo’.**
 
 This is basis for code development, how about research?
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Do you recognise yourself?
 
 ![PhD comic: "Final".doc - files are called: Final.doc, Final_rev.2.doc, FINAL_rev.6.COMMENTS.doc, FINAL_rev.8.commens5.CORRECTIONS.doc, FINAL_rev.18.comment7.corrections9.MORE.30.doc, FINAL_rev.22.comments49.corrections.10.WHYDIDICOMETOGRADSCHOOL.doc](img/phd101212s_small.gif)
 
 PhD Comics [FINAL.doc](https://phdcomics.com/comics/archive.php?comicid=1531)
-
----
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Version control with `git`
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### What lies ahead…?
 
 ![XKCD comic - A: This is git. It tracks collaborative work on projects through a beautiful distributed graph theory tree mode; B: Cool. How do we use it?; A: No idea. Just memorise these shell commands and type them to sync up. If you get errors, save your work elsewhere, delete the project, and download a fresh copy.](img/git.png)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Learning objectives
 
 * Understand the basics of automated version control
 * Understand the basics of `git` and `GitHub`
 * Be introduced on how to apply version control to your research
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### How version control works
 
 Version control is like a 'recording' of history
@@ -94,9 +88,7 @@ Version control is like a 'recording' of history
 ![Three documents. The first has two paragraphs. The second has a modified paragraph. The third has an additional paragraph](img/play-changes.png)
 
 ...Rewind and play changes back again!
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Multiple contributors (branching)
 
 * Two people work on a document
@@ -105,18 +97,14 @@ Version control is like a 'recording' of history
 ![Three documents. On the left is the original, and on the right are two versions of this with different, and conflicting, changes](img/versions.png)
 
 * Changes are separate from the document
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Combining changes (merging)
 
 * Several changes can be merged onto the same base document
   * 'Merging'
 
 ![Three documents. On the left are the two modified documents from the previous slide. On the right is a single that incorporates both of those changes](img/merge.png)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### What version control systems do
 
 * Version control systems manage this process
@@ -126,29 +114,21 @@ Version control is like a 'recording' of history
 * The complete history of *commits* and metadata is a *repository*
 * CVS, Subversion, RCS: legacy systems
 * `git`, Mercurial: modern *distributed* VC tools
-
----
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Setting up `git`
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Learning objectives
 
 * Configure `git` for first use on a computer
 * Understand `git config --global`
-
-----
-### Install Git
+</script></section><section data-markdown><script type="text/template">### Install Git
 
 Well, fist of all you need to install Git on your computer!
 
 [Follow these instructions](https://docs.github.com/en/get-started/quickstart/set-up-git)
 
 [...well, attempt now or do it later, but follow the course!]
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Setting global options
 
 * `git` needs to know who you are for metadata
@@ -165,21 +145,15 @@ $ git config --global core.editor "vim"
 * Last, let's set up your default branch as `main`
 ```
 $ git config --global init.defaultBranch main
-```
-----
-
+```</script></section><section data-markdown><script type="text/template">
 ### Check global options
 * You can check your settings at any time:
 ```
 $ git config --list
 ```
-
----
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Creating a repository
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Learning objectives
 
 * Create a local `git` repository
@@ -187,9 +161,7 @@ $ git config --list
   * files
   * commits
   * metadata
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Creating a `git` repository
 
 * A fictional project about planets
@@ -202,20 +174,14 @@ $ git init
 $ git status
 ```
 **Advise: use `git status` all the time!!!!!!**
-
----
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Tracking changes
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Learning objectives
 
 * Practice the modify-add-commit cycle
 * Understand where information is stored, in the `git` workflow
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### My first untracked file
 
 * We'll create a file, but do nothing with it
@@ -226,9 +192,7 @@ $ git status
 ```
 vim mars.txt
 ```
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### My first `git` commit
 
 * We tell `git` that it should *track* a file (watch for changes): `git add`
@@ -241,9 +205,7 @@ git add mars.txt
 git commit -m "start notes on Mars as a base"
 git log
 ```
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### The staging area
 
 * We don't always want to commit all changes
@@ -251,9 +213,7 @@ git log
   * (other files may also be changed, but we don't want to commit them)
 
 ![On the left is a modified document. On the right is a zone representing the data stored in `.git`. In that zone are two containers: a staging area, and a repository. Using `git add` places the document into the staging area. Using `git commit` moves the document from the staging area into the repository](img/git-staging-area.png)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### modify-add-commit
 
 * Now we want to add more information to the file
@@ -270,9 +230,7 @@ git add mars.txt
 git diff
 git commit
 ```
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### IGNORING THINGS
 
 * Not all files are useful
@@ -285,9 +243,7 @@ git commit
 * `.gitignore` is a special file in your repository root
   * It tells `git` to ignore specified files/directories
   * It should be committed in your repository
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Question
 
 -  Which command(s) below would save changes in `myfile.txt` to the local `git` repository?
@@ -298,35 +254,25 @@ git commit
 3. `git add myfile.txt; git commit -m "add recent changes"`
 4. `git commit -m myfile.txt "add recent changes"`
 
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### What is likely to happen…
 
 ![XKCD comic: a list of commit messages for a repository that start well, but become progressively more like gibberish, titled "As a project drags on, my `git` commit messages get less and less informative"](img/git_commit.png)
-
----
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Exploring history
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Is history bunk?
 
 * How can I identify old versions of files?
 * How do I review changes between commits?
 * How can I recover old file versions?
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Learning objectives
 
 * Understand what the `HEAD` of a repository is
 * Compare various versions of tracked files
 * Restore old versions of files
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Commit history
 
 * Most recent commit: `HEAD`
@@ -334,9 +280,7 @@ git commit
 * Next-next-most recent: `HEAD~2`
 
 ![Three documents. On the left is the original. In the middle is that document with one line changed. On the right is the middle document with an extra paragraph added. Arrows indicate that the documents are related in order of history.](img/play-changes.png)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### History with `git diff`
 
 * We can use `git diff` to see what changed for a file at each commit
@@ -352,9 +296,7 @@ Use  `git log` to check the history of commits:
 ```
 $ git log
 ```
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 
 ### Restoring older versions
 
@@ -366,9 +308,7 @@ $ git log
 ```
 $ git checkout HEAD mars.txt
 ```
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### `git checkout`
 
 * `git checkout` "checks out" files from the repo
@@ -376,9 +316,7 @@ $ git checkout HEAD mars.txt
   * Check out the commit *before* the edit you want to replace!
 
 ![On the left is a zone representing the `.git` directory, with three commits in a repository. One commit (HEAD~1, f22b25e) contains changes we want to recover. On the right are two files that are rcovered. An arrow indicates two commands for recovery: `git checkout HEAD~1` and `git checkout f22b25e`](img/git-checkout.png)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Question
 
 - Which command(s) below will let Dracula recover the last committed version of `mars.txt` (but no other files)?
@@ -387,21 +325,15 @@ $ git checkout HEAD mars.txt
 1. `$ git checkout HEAD`
 2. `$ git checkout HEAD mars.txt`
 3. `$ git checkout HEAD~1 mars.txt`
-
----
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Remotes in GitHub
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Learning objectives
 
 * What remote repositories are and why they are useful
 * To clone a remote repository
 * To push to and pull from a remote repository
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Remote repositories
 
 * Version control most useful for collaboration
@@ -410,23 +342,17 @@ $ git checkout HEAD mars.txt
 * Services available:
   * GitHub, BitBucket, GitLab
 * We're using GitHub
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### GitHub Saved My Life!
 
 ![GitHub Saved My Life Tonight](img/github_saved_my_life.png)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Log in to GitHub
 
 * Register for an account, if you don't have one - then log in
 
 [https://github.com/](https://github.com/)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Create a remote repository
 
 ![Screenshot of GitHub top bar](img/github-repo-new.png)
@@ -439,17 +365,13 @@ cd planets
 git init
 ```
 **Live Presentation**
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### A freshly-made GitHub repository
 
 * There's nothing in the remote repository!
 
 ![Two repositories. At the top, the local `planets` repository (belonging to Vlad), which contains files in the staging area and repository. At the bottom, an empty epository, representing the 'clean' repository just created on `GitHub`](img/git-freshly-made-github-repo.png)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Connecting local and remote repositories
 
 * We tell the *local* repository that the GitHub repository is its *remote* repository.
@@ -464,24 +386,18 @@ git remote add origin git@github.com:simosacchi/planets.git
 git push origin main
 git remote -v
 ```
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### SSH Key authentication on Github
 WARNING: Since 13 August 2021 Github requires an SSH Key to push to a remote.
 
 Details on how to setup a key on your machine are available here: https://librarycarpentry.org/lc-git/03-sharing/index.html#ssh-background-and-setup
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Remote GitHub repo after first *push*
 
 * We only *push* the repository, not the staging area
 
 ![Two repositories. At the top, the local `planets` repository (belonging to Vlad), which contains files in the staging area and repository. At the bottom, the remote `GitHub` repository, which contains the same repostitory as the local repo - but *not* the staging area](img/github-repo-after-first-push.png)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Sync local repo with remote
 
 * To synchronise the local repo with the remote repo, you *pull*
@@ -489,28 +405,20 @@ Details on how to setup a key on your machine are available here: https://librar
 ```
 git pull origin main
 ```
-
----
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Notes on collaboration
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Collaborating with...
 
 * Your first and foremost collaborator is your future self
 * ...or yourself on a different machine!
 * The same perspective applies when you work with others
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Github as the hub for collaboration
 
 * Keep changes in sync across (different) contributors working on different computers with local repositories
 * Manage conflicts across versions
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Why conflicts occur
 
 * People working in parallel
@@ -518,15 +426,11 @@ git pull origin main
   * not keeping local repo in sync before making local changes
   * not keeping remote repo in sync after making local changes
 * `git pull` before working; `git push` when done
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Seriously, `git push` when done…
 
 ![A sign: In case of fire 1. git commit, 2. git push, 3. leave building](img/git_fire_notice.jpg)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### The conflict message
 
 ```
@@ -539,15 +443,11 @@ hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### The conflicting changes
 
 ![Three text files. At the top is the original, below this are two versions with conflicting changes. Arrows point to a question mark: how will we resolve this?](img/conflict.png)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Resolving a conflict
 
 * `git` detects overlapping changes
@@ -557,14 +457,10 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
   * *pull* remote changes
   * *merge* changes into our working copy
   * *push* the merged changes
-
----
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Wrapping up and Open Science
 
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### A traditional story
 > * A scientist **collects some data** and stores it on a machine that is occasionally backed up by her department. She then **writes or modifies a few small programs** (which also reside on her machine) to analyze that data. Once she has some results, **she writes them up and submits her paper**. She might include her data – a growing number of journals require this – but she probably doesn’t include her code. 
 >
@@ -575,9 +471,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 > More time passes….
 >
 > * **The paper is eventually published**. It might include a link to an online copy of her data, but the paper itself will be behind a paywall: only people who have personal or institutional access will be able to read it.
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### A revised approach
 
 > * The data that the researcher collects is stored in an **open access repository** (e.g. [Zenodo](https://zenodo.org/) or [FigShare](https://figshare.com/)), possibly as soon as it’s collected, and given its own **Digital Object Identifier (DOI)**.
@@ -587,48 +481,34 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 > * When she’s happy with the state of her paper, **she posts a version to arXiv or some other preprint server** to invite feedback from peers.
 > * Based on that feedback, she may post several revisions before finally submitting her paper to a journal.
 > * **The published paper includes links to her preprint and to her code and data repositories**, which makes it much easier for other scientists to use her work as starting point for their own research.
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 ### Takeaways
 
 * GitHub/version control can be an open electronic lab book as part of Open Science workflows
   * Collect data - store in OA repository
   * Use GitHub to store work in progress: analysis lab book
   * Post preprint to preprint server
-* Even if you don't work openly, it's more reproducible (and auditable)
-----
-
+* Even if you don't work openly, it's more reproducible (and auditable)</script></section><section data-markdown><script type="text/template">
 ### You're at least ready to leave this behind! ;-)
 
 ![PhD comic: A directory listing with filenames like data_2010.05.28_test.dat, data_2010.05.28_re-test.dat, data_2010.05.28_re-re-test.dat, data_2010.05.28_calibrate.dat, data_2010.05.29_aaarrrgh.dat, data_2010.05.29_WTF.dat, data_2010.05.29_USETHISONE.dat](img/phd052810s.png)
-
----
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## Questions?
-
----
-
+</script></section><section ><section data-markdown><script type="text/template">
 ## Acknowledgement
 
 These slides are based on:
 * Leighton Pritchard [SWC Lessons](https://github.com/widdowquinn/Teaching-SWC-Lessons)
 * Library Carpentry: [Introduction to Git](https://librarycarpentry.org/lc-git/)
 * Software Carpentry: [Version Control with Git](https://swcarpentry.github.io/git-novice/)
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 These slides are released under a [Creative Commons Attribution International 4.0](https://creativecommons.org/licenses/by/4.0/) licence. Any feedback and reuse of content is welcome!
 
 * Web version: [https://eui-library.github.io/researchskills-2021-12-01-git/](https://eui-library.github.io/researchskills-2021-12-01-git/)
 * GitHub repo: [https://github.com/EUI-Library/researchskills-2021-12-01-git](https://github.com/EUI-Library/researchskills-2021-12-01-git)
-
----
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 ## Extra stuff
-
-----
-
+</script></section><section data-markdown><script type="text/template">
 Dracula also has to set his favorite text editor, following this table:
 
 | Editor             | Configuration command                            |
@@ -643,3 +523,55 @@ Dracula also has to set his favorite text editor, following this table:
 | Vim                | `$ git config --global core.editor "vim"`   |
 
 You can reconfigure the editor for Git at any time.
+</script></section></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":false,"margin":0.1,"width":1280,"height":800}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
