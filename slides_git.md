@@ -6,7 +6,7 @@
 
 Simone Sacchi, Open Science Librarian
 
-Library #researchskills session 09/03/2022
+Library #researchskills session 08/03/2023
 
 
 
@@ -20,15 +20,15 @@ Library #researchskills session 09/03/2022
 
 * How many of you are already familiar with Git/GitHub and/or other so called "version control" systems?
 * How many of you have already installed Git on your computer?
-* How many of you are already using Git/GitHub to track changes in your research?
+* Have you thought of using Git/GitHub to keep a history of your research?
 
 ----
 
 ### Cautionary note
 
 * This training is very much at the introductory level and many details are intentionally skipped.
-* Most of the examples assume a Unix/Linux (and Mac) command-line environment  but everything can be easily replicated in Windows and/or using a Git GUI
-* Git can be fully taken advantage of when working with textual files but all kinds of files can be tracked!
+* Most of the examples assume a Unix/Linux (and Mac) command-line environment  but everything can be replicated in Windows and/or using a Git GUI
+* Git can be fully taken advantage of when working with text-based files (.txt, .cvs. .tex, .html, or any coding/scripting language, e.g. R) but all kinds of files can be tracked!
 
 ---
 
@@ -44,18 +44,17 @@ Library #researchskills session 09/03/2022
 * How to manage this?
   * take turns on each file?
   * email copies?
-* The solution? **Version Control**
 
 ----
 
-### Advantage of version control
+### The solution: version control
 
-* Nothing that is *committed* is *ever* lost (unless you try hard…)
 * We can record who made which changes, and when
-* We can revert to previous versions.
-* We can identify and correct conflicts
+* We can revert to previous versions
+* We can identify and correct conflicts (e.g. possible overwriting)
+* Nothing that is *committed* is *ever* lost (unless you try hard…)
 
-**Version control is like an unlimited ‘undo’.**
+**Version control is like an unlimited ‘undo/redo’.**
 
 This is basis for code development, how about research?
 
@@ -66,6 +65,12 @@ This is basis for code development, how about research?
 ![PhD comic: "Final".doc - files are called: Final.doc, Final_rev.2.doc, FINAL_rev.6.COMMENTS.doc, FINAL_rev.8.commens5.CORRECTIONS.doc, FINAL_rev.18.comment7.corrections9.MORE.30.doc, FINAL_rev.22.comments49.corrections.10.WHYDIDICOMETOGRADSCHOOL.doc](img/phd101212s_small.gif)
 
 PhD Comics [FINAL.doc](https://phdcomics.com/comics/archive.php?comicid=1531)
+
+----
+
+### Now you might wonder...
+
+What about Microsoft Office 365? Google Drive? Dropbox? (etc. etc.)
 
 ---
 
@@ -125,7 +130,7 @@ Version control is like a 'recording' of history
    * record 'versions' (a.k.a. *commits*)
 * The complete history of *commits* and metadata is a *repository*
 * CVS, Subversion, RCS: legacy systems
-* `git`, Mercurial: modern *distributed* VC tools
+* `git`, Mercurial: modern *distributed* VC systems
 
 ---
 
@@ -273,7 +278,7 @@ git commit
 
 ----
 
-### IGNORING THINGS
+### NOTEL: IGNORING THINGS
 
 * Not all files are useful
   * Editor backup files
@@ -390,7 +395,7 @@ $ git checkout HEAD mars.txt
 
 ---
 
-## Remotes in GitHub
+## Remote repositories in GitHub
 
 ----
 
