@@ -146,6 +146,7 @@ Version control is like a 'recording' of history
 * Understand `git config --global`
 
 ----
+
 ### Install Git
 
 Well, fist of all you need to install Git on your computer!
@@ -173,6 +174,7 @@ $ git config --global core.editor "vim"
 ```
 $ git config --global init.defaultBranch main
 ```
+
 ----
 
 ### Check global options
