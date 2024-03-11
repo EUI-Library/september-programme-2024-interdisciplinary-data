@@ -1,11 +1,11 @@
-# Slide deck for the 2023-03-08 EUI \#researchskills session "Introduction to Git and Github for Social Science Research".
+# Slide deck for the 2024-03-13 EUI \#researchskills session "Your data, your code, your papers, your research: make the most of your scholarly assets".
 
 Training session by @simosacchi
 
 These slides are released under a [Creative Commons Attribution International 4.0](https://creativecommons.org/licenses/by/4.0/) licence. Any feedback and reuse of content is welcome!
 
-* Web version: [https://eui-library.github.io/researchskills-2022-03-09-git/](https://eui-library.github.io/researchskills-2023-03-08-git/)
-* GitHub repo: [https://github.com/EUI-Library/researchskills-2022-03-09-git](https://github.com/EUI-Library/researchskills-2023-03-08-git)
+* Web version: TBD
+* GitHub repo: [https://github.com/EUI-Library/researchskills-2024-3-13-manage-research-outputs](https://github.com/EUI-Library/researchskills-2024-3-13-manage-research-outputs)
 
 ## Acknowledgement
 These slides are based on:
