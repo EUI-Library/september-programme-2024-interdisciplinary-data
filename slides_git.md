@@ -79,14 +79,11 @@ EUI Library #researchskills session 13/03/2024
 
 ----
 
-![Falling laptop](img/laptop.jpg)
-
-----
-
 ## Do not keep your research __only__ on your laptop
 <img src="img/laptop.jpg" alt="isolated" width="60%"/>
 
 ----
+
 ### Tools at the EUI
 - Network drive __G:\\__ (all EUI members, fully backed-up, daily, weekly, monthly, GDPR compliant)
 - Microsoft __OneDrive for Business__ (all EUI members, cloud storage, up to 1TB, GDPR compliant)
