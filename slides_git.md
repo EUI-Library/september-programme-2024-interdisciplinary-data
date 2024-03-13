@@ -1,14 +1,14 @@
-## Introduction to Git and GitHub for social science research
-#### or, track changes to your research in an efficient and effective way
+## Your data, your code, your papers, your research
+#### make the most of your scholarly assets
 
 
 &nbsp;
 
 Simone Sacchi, PhD
 
-Open Science Librarian
+Research Data Librarian
 
-Library #researchskills session 08/03/2023
+EUI Library #researchskills session 13/03/2024
 
 
 
@@ -20,36 +20,137 @@ Library #researchskills session 08/03/2023
 
 ### Let's make a round of introductions
 
-* How many of you are already familiar with Git/GitHub and/or other so called "version control" systems?
-* How many of you have already installed Git on your computer?
-* Have you thought of using Git/GitHub to keep a history of your research?
+* Name
+* Department / Unit
 
 ----
 
 ### Cautionary note
 
 * This training is very much at the introductory level and many details are intentionally skipped.
-* Most of the examples assume a Unix/Linux (and Mac) command-line environment  but everything can be replicated in Windows and/or using a Git GUI
-* Git can be fully taken advantage of when working with text-based files (.txt, .cvs. .tex, .html, or any coding/scripting language, e.g. R) but all kinds of files can be tracked!
+* Resources to go deep in each topic are at the bottom of each slides.
 
 ---
 
-## Let me tell you a story...
+## Agenda for today
+- Introduction
+- The basics of safeguarding your scholarly assets 
+- How to keep track of changes and why it matters
+- Research data and their curation
+- Transparency, reproducibility and trust
+- Conclusion and wrap-up
+
+---
+
+# Introduction
 
 ----
 
-### Once upon a time...
+### (Digital) scholarly asset: what the heck is that?
 
-* Wolfman and Dracula were been hired to plan a Mars mission (obviously...)
-* Wolfman and Dracula live on different continents
-* They work on the same plan at the same time
-* How to manage this?
-  * take turns on each file?
-  * email copies?
+- Anything collected/generated/produced during a research endeavour or other academic practices
+- Some outputs are transitory in nature (e.g. raw data, drafts etc.)
+- Some are intended to be “final” (a published paper)
+- All go through changes, revisions, updates, etc.
+
+> N.B. scholarly assets, research outputs, etc. use the term you prefer!
 
 ----
 
-### The solution: version control
+### Challenges we face
+- How do we avoid losing our work?
+- How do we avoid losing the history of our work?
+- How do we make sure my future self understands our current work (and the process that went into it)?
+- How do we make sure that others can understand our work and can validate it?
+- How can we plan everything so we do not forget?
+
+----
+
+### Plan, plan, and then... act!
+
+- Plan your research (thoroughly)
+- Plan how to curate data, sources & code (and revise accordingly)
+- Plan how to 
+- Plan how to maximize impact of your scholarly assets
+
+---
+
+## The basics of safeguarding your scholarly assets
+
+----
+
+![Falling laptop](img/laptop.jpg)
+
+----
+
+## Do not keep your research __only__ on your laptop
+<img src="img/laptop.jpg" alt="isolated" width="60%"/>
+
+----
+### Tools at the EUI
+- Network drive __G:\\__ (all EUI members, fully backed-up, daily, weekly, monthly, GDPR compliant)
+- Microsoft __OneDrive for Business__ (all EUI members, cloud storage, up to 1TB, GDPR compliant)
+
+_but also_
+
+- External hard drive and/or other cloud storage (your own)
+
+> ☞ [Safeguarding your data](https://www.eui.eu/ServicesAndAdmin/ComputingService/Storage/SafeguardingYourData) (ICT Website)
+
+----
+
+### OneDrive for Business
+
+* Full integration with Office 365 software suite
+* Sync files between the cloud and your Mac or Windows computer(s) via free app
+* Free OneDrive for Business mobile app available on several platforms including Android, iOS, macOS and MS Windows
+* Easy recovery from accidental deletes or malicious attacks
+* Full activity auditing logs
+
+> ☞ Just login with your EUI credentials
+
+----
+
+## ...now let's stop with the basics...
+
+---
+
+## How to keep track of changes and why it matters
+
+----
+### Is OneDrive enough for you?
+
+OneDrive may very well be enough for you, but...
+- Microsoft versioning is quite rudimental and not transparent
+- You can go back up to a certain point, and if you make changes you lose your previous way forward
+- There is no way to add "messages" about where you stand
+- You still have to rely on file naming conventions for proper versioning
+
+----
+### Brief excursus on file naming conventions
+- __Vocabulary__: choose a standard vocabulary for file names so that everyone uses and common language.
+
+- __Punctuation__: decide on conventions for symbols, capitals, hyphens and spaces.
+
+- __Dates__:  agree on a logical use e.g., YYYYMMDD.
+
+- __Order__: confirm which element should go first, etc.
+
+- __Numbers__: specify the number of digits that will be used in numbering.
+
+
+> Briney, K. A. (2020, June 2). File Naming Convention Worksheet. California Institute of Technology. [https://doi.org/10.7907/894q-zr22](https://doi.org/10.7907/894q-zr22)
+
+----
+
+### However, do you recognise yourself?
+
+![PhD comic: "Final".doc - files are called: Final.doc, Final_rev.2.doc, FINAL_rev.6.COMMENTS.doc, FINAL_rev.8.commens5.CORRECTIONS.doc, FINAL_rev.18.comment7.corrections9.MORE.30.doc, FINAL_rev.22.comments49.corrections.10.WHYDIDICOMETOGRADSCHOOL.doc](img/phd101212s_small.gif)
+
+PhD Comics [FINAL.doc](https://phdcomics.com/comics/archive.php?comicid=1531)
+
+----
+### The solution: version control systems
 
 * We can record who made which changes, and when
 * We can revert to previous versions
@@ -58,39 +159,16 @@ Library #researchskills session 08/03/2023
 
 **Version control is like an unlimited ‘undo/redo’.**
 
-This is basis for code development, how about research?
-
-----
-
-### Do you recognise yourself?
-
-![PhD comic: "Final".doc - files are called: Final.doc, Final_rev.2.doc, FINAL_rev.6.COMMENTS.doc, FINAL_rev.8.commens5.CORRECTIONS.doc, FINAL_rev.18.comment7.corrections9.MORE.30.doc, FINAL_rev.22.comments49.corrections.10.WHYDIDICOMETOGRADSCHOOL.doc](img/phd101212s_small.gif)
-
-PhD Comics [FINAL.doc](https://phdcomics.com/comics/archive.php?comicid=1531)
-
-----
-
-### Now you might wonder...
-
-What about Microsoft Office 365? Google Drive? Dropbox? (etc. etc.)
+> This is basis for code development, but can be applied also to research!
 
 ---
 
-## Version control with `git`
+### Version control with `git` and `GitHub`
 
 ----
-
-### What lies ahead…?
+## Don't be scared...
 
 ![XKCD comic - A: This is git. It tracks collaborative work on projects through a beautiful distributed graph theory tree mode; B: Cool. How do we use it?; A: No idea. Just memorise these shell commands and type them to sync up. If you get errors, save your work elsewhere, delete the project, and download a fresh copy.](img/git.png)
-
-----
-
-### Learning objectives
-
-* Understand the basics of automated version control
-* Understand the basics of `git` and `GitHub`
-* Be introduced on how to apply version control to your research
 
 ----
 
@@ -104,26 +182,6 @@ Version control is like a 'recording' of history
 
 ----
 
-### Multiple contributors (branching)
-
-* Two people work on a document
-  * Each makes independent changes: two versions
-
-![Three documents. On the left is the original, and on the right are two versions of this with different, and conflicting, changes](img/versions.png)
-
-* Changes are separate from the document
-
-----
-
-### Combining changes (merging)
-
-* Several changes can be merged onto the same base document
-  * 'Merging'
-
-![Three documents. On the left are the two modified documents from the previous slide. On the right is a single that incorporates both of those changes](img/merge.png)
-
-----
-
 ### What version control systems do
 
 * Version control systems manage this process
@@ -131,125 +189,15 @@ Version control is like a 'recording' of history
    * store metadata (who, when)
    * record 'versions' (a.k.a. *commits*)
 * The complete history of *commits* and metadata is a *repository*
-* CVS, Subversion, RCS: legacy systems
-* `git`, Mercurial: modern *distributed* VC systems
-
----
-
-## Setting up `git`
 
 ----
 
-### Learning objectives
-
-* Configure `git` for first use on a computer
-* Understand `git config --global`
-
-----
-
-### Install Git
-
-Well, fist of all you need to install Git on your computer!
-
-[Follow these instructions](https://docs.github.com/en/get-started/quickstart/set-up-git)
-
-[...well, attempt now or do it later, but follow the course!]
-
-----
-
-### Setting global options
-
-* `git` needs to know who you are for metadata
-* `git` wants your preferences for editing
-*  ...and that you want to use these settings globally (i.e. for every project).
-```
-$ git config --global user.name "Vlad Dracul"
-$ git config --global user.email "vlad@tran.sylvan.ia"
-```
-* Let's config your editor of choice, e.g.:
-```
-$ git config --global core.editor "vim"
-```
-* Last, let's set up your default branch as `main`
-```
-$ git config --global init.defaultBranch main
-```
-
-----
-
-### Check global options
-* You can check your settings at any time:
-```
-$ git config --list
-```
-
----
-
-## Creating a repository
-
-----
-
-### Learning objectives
-
-* Create a local `git` repository
-* What is in a repository?
-  * files
-  * commits
-  * metadata
-
-----
-
-### Creating a `git` repository
-
-* A fictional project about planets
-  * (Wolfman and Dracula…)
-
-**Live Presentation**
-
-```
-$ git init
-$ git status
-```
-**Advise: use `git status` all the time!!!!!!**
-
----
-
-## Tracking changes
-
-----
-
-### Learning objectives
-
-* Practice the modify-add-commit cycle
-* Understand where information is stored, in the `git` workflow
-
-----
-
-### My first untracked file
-
-* We'll create a file, but do nothing with it
-  * Research question: "Is Mars suitable as a space base?"
-
-**Live Presentation**
-
-```
-vim mars.txt
-```
-
-----
-
-### My first `git` commit
-
-* We tell `git` that it should *track* a file (watch for changes): `git add`
-* We also `git commit` the file (keep a copy of the file in the *repository*, in its current state)
-
-**Live Presentation**
-
-```
-git add mars.txt
-git commit -m "start notes on Mars as a base"
-git log
-```
+### Core `git` concepts: init / add / commit
+ 
+* You initialize a (local) repository within a folder (`git init`)
+* You create/modify a file in the folder & save it
+* You add the file to *staging area* (`git add`)
+* You commit changes (`git commit -m "my change"`)
 
 ----
 
@@ -263,392 +211,168 @@ git log
 
 ----
 
-### modify-add-commit
+### Not command line fans? There are apps!
 
-* Now we want to add more information to the file
-  * Modify file
-  * Add file to *staging area* (`git add`)
-  * Commit changes
+![GitHub Studio](img/github-studio.png)
 
-**Live Presentation**
-
-```
-vim mars.txt
-git diff
-git add mars.txt
-git diff
-git commit
-```
+[GitHub Desktop](https://desktop.github.com/)
 
 ----
 
-### NOTEL: IGNORING THINGS
+### ... and there are integrations!
 
-* Not all files are useful
-  * Editor backup files
-  * Temporary files
-  * Intermediate analysis files
+![R Studio with git](img/RStudio-commit.png)
 
-**.gitignore**
-
-* `.gitignore` is a special file in your repository root
-  * It tells `git` to ignore specified files/directories
-  * It should be committed in your repository
+[R Studio](https://github.com/rstudio/rstudio)
 
 ----
 
-### Question
+## Remote repositories and GitHub
 
--  Which command(s) below would save changes in `myfile.txt` to the local `git` repository?
-
-
-1. `git commit -m "add recent changes"`
-2. `git init myfile.txt; git commit -m "add recent changes"`
-3. `git add myfile.txt; git commit -m "add recent changes"`
-4. `git commit -m myfile.txt "add recent changes"`
-
-
-----
-
-### What is likely to happen…
-
-![XKCD comic: a list of commit messages for a repository that start well, but become progressively more like gibberish, titled "As a project drags on, my `git` commit messages get less and less informative"](img/git_commit.png)
-
----
-
-## Exploring history
-
-----
-
-### Is history bunk?
-
-* How can I identify old versions of files?
-* How do I review changes between commits?
-* How can I recover old file versions?
-
-----
-
-### Learning objectives
-
-* Understand what the `HEAD` of a repository is
-* Compare various versions of tracked files
-* Restore old versions of files
-
-----
-
-### Commit history
-
-* Most recent commit: `HEAD`
-* Next-most recent: `HEAD~1`
-* Next-next-most recent: `HEAD~2`
-
-![Three documents. On the left is the original. In the middle is that document with one line changed. On the right is the middle document with an extra paragraph added. Arrows indicate that the documents are related in order of history.](img/play-changes.png)
-
-----
-
-### History with `git diff`
-
-* We can use `git diff` to see what changed for a file at each commit
-
-**Live Presentation**
-
-```
-$ git diff HEAD~1 mars.txt
-$ git diff HEAD~2 mars.txt
-```
-
-Use  `git log` to check the history of commits:
-```
-$ git log
-```
-
-----
-
-
-### Restoring older versions
-
-* How can we restore older versions/backtrack?
-* Let's say we accidentally overwrite a file…
-
-**Live Presentation**
-
-```
-$ git checkout HEAD mars.txt
-```
-
-----
-
-### `git checkout`
-
-* `git checkout` "checks out" files from the repo
-  * Can use any commit identifier
-  * Check out the commit *before* the edit you want to replace!
-
-![On the left is a zone representing the `.git` directory, with three commits in a repository. One commit (HEAD~1, f22b25e) contains changes we want to recover. On the right are two files that are rcovered. An arrow indicates two commands for recovery: `git checkout HEAD~1` and `git checkout f22b25e`](img/git-checkout.png)
-
-----
-
-### Question
-
-- Which command(s) below will let Dracula recover the last committed version of `mars.txt` (but no other files)?
-
-
-1. `$ git checkout HEAD`
-2. `$ git checkout HEAD mars.txt`
-3. `$ git checkout HEAD~1 mars.txt`
-
----
-
-## Remote repositories in GitHub
-
-----
-
-### Learning objectives
-
-* What remote repositories are and why they are useful
-* To clone a remote repository
-* To push to and pull from a remote repository
-
-----
-
-### Remote repositories
-
-* Version control most useful for collaboration
-  * Easiest to have a single repository
-  * Repository may be hosted off-site (for at least one collaborator)
-* Services available:
-  * GitHub, BitBucket, GitLab
-* We're using GitHub
-
-----
-
-### GitHub Saved My Life!
+GitHub Saved My Life!
 
 ![GitHub Saved My Life Tonight](img/github_saved_my_life.png)
 
 ----
 
-### Log in to GitHub
+### Whats is GitHub?
 
-* Register for an account, if you don't have one - then log in
+* Cloud service for `git`
+* Replicate, backup your repositories in the cloud
+* Sync across multiple computers
+* Visualize changes in an intuitive way
 
-[https://github.com/](https://github.com/)
-
-----
-
-### Create a remote repository
-
-![Screenshot of GitHub top bar](img/github-repo-new.png)
-
-* Essentially, on GitHub's servers:
-
-```
-mkdir planets
-cd planets
-git init
-```
-**Live Presentation**
+> [https://github.com/](https://github.com/)
 
 ----
+### Where to start with `git` and `GitHub`?
 
-### A freshly-made GitHub repository
+* ["Introduction to Git and Github for Social Science Research"](https://github.com/EUI-Library/researchskills-2023-03-08-git) (slides from a past EUI Library #researchskills session)
+* ["Version control with git"](https://swcarpentry.github.io/git-novice/) (Intro to git by [The Carpentries](https://carpentries.org/))
+* ["GitHub and Git for research and teaching"](https://www.uu.nl/en/research/research-data-management/tools/software-and-computing/github-and-git) (Utrecht University)
+* [Social Science Data Lab](https://github.com/socialsciencedatalab) (Mannheim Centre for European Social Research)
 
-* There's nothing in the remote repository!
-
-![Two repositories. At the top, the local `planets` repository (belonging to Vlad), which contains files in the staging area and repository. At the bottom, an empty epository, representing the 'clean' repository just created on `GitHub`](img/git-freshly-made-github-repo.png)
-
-----
-
-### Connecting local and remote repositories
-
-* We tell the *local* repository that the GitHub repository is its *remote* repository.
-  * `origin` is a local nickname for the remote repo (a common choice)
-  * Once set up, we *push* changes/history to the remote repo
-
-**Live Presentation**
-
-```
-git remote -v
-git remote add origin git@github.com:simosacchi/planets.git
-git push origin main
-git remote -v
-```
-
-----
-
-### SSH Key authentication on Github
-WARNING: Since 13 August 2021 Github requires an SSH Key to push to a remote.
-
-Details on how to setup a key on your machine are available here: https://librarycarpentry.org/lc-git/03-sharing/index.html#ssh-background-and-setup
-
-----
-
-### Remote GitHub repo after first *push*
-
-* We only *push* the repository, not the staging area
-
-![Two repositories. At the top, the local `planets` repository (belonging to Vlad), which contains files in the staging area and repository. At the bottom, the remote `GitHub` repository, which contains the same repostitory as the local repo - but *not* the staging area](img/github-repo-after-first-push.png)
-
-----
-
-### Sync local repo with remote
-
-* To synchronise the local repo with the remote repo, you *pull*
-
-```
-git pull origin main
-```
+> There are many wonderful online resources!
 
 ---
 
-## Notes on collaboration
+## Research data and their curation
 
 ----
 
-### Collaborating with...
+### What is Research Data Management?
 
-* Your first and foremost collaborator is your future self
-* ...or yourself on a different machine!
-* The same perspective applies when you work with others
+__Research Data Management (RDM)__ is a general term that covers how you organize, structure, store, and care for the information used or generated during a research project.
 
-----
+![Research Data Lifecucle](img/LDW--general.png)
 
-### Github as the hub for collaboration
-
-* Keep changes in sync across (different) contributors working on different computers with local repositories
-* Manage conflicts across versions
+> Research data are becoming first-class citizens in the scholarly communication landscape!
 
 ----
 
-### Why conflicts occur
+### Principles of RDM
+* General principles, the __FAIR principles__:
 
-* People working in parallel
-  * different changes to same part of a file
-  * not keeping local repo in sync before making local changes
-  * not keeping remote repo in sync after making local changes
-* `git pull` before working; `git push` when done
+![FAIR principles of RDM](img/FAIR.png)
 
-----
-
-### Seriously, `git push` when done…
-
-![A sign: In case of fire 1. git commit, 2. git push, 3. leave building](img/git_fire_notice.jpg)
+> Best practices and tool to make your data FAIR: [FAIRsFAIR Project](https://www.fairsfair.eu/tools-software)
 
 ----
 
-### The conflict message
+### Data Management Plans (DMPs)
 
-```
-To https://github.com/<collaborator>/planets.git
- ! [rejected]        main -> main (fetch first)
-error: failed to push some refs to 'https://github.com/<collaborator>/planets.git'
-hint: Updates were rejected because the remote contains work that you do
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
-hint: (e.g., 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-```
+__Data Management Plans (DMPs)__ are documents that describe:
+* How data is generated used, elaborated and organised
+* How data, and data subjects, are protected
+* How data, code and ancillary elements are described and documented
+* How data is stored and secured, and how long it will be retained
+* How dataset authorship and credit are assigned
+* How data is preserved and under what terms, can be shared
 
-----
-
-### The conflicting changes
-
-![Three text files. At the top is the original, below this are two versions with conflicting changes. Arrows point to a question mark: how will we resolve this?](img/conflict.png)
+> [EUI Data Management Plans guidelines](https://www.eui.eu/research/library/researchdataservices#DATAMANAGEMENT)
 
 ----
 
-### Resolving a conflict
+### Personal and sensitive data
 
-* `git` detects overlapping changes
-  * `git` defers to humans for how to resolve: **communicate**!
+* The collection, use, analysis  of data that include personal and sensitive informationabout human subjects are bound to the __General Data Protection Regulation (GDPR)__
+* __Informed consent__ is the key to all you can do
+* Personal and sensitive data cannot be shared openly if not __Anonymized__ of __Pseudonymised__ 
 
-* To resolve:
-  * *pull* remote changes
-  * *merge* changes into our working copy
-  * *push* the merged changes
+> EUI information, resources and procedures here:
+>  * [The Research Data Lifecycle](https://www.eui.eu/Research/Library/ResearchDataServices/StepByStep)
+> * [Ethics and Integrity in Academic Research](https://www.eui.eu/ServicesAndAdmin/DeanOfStudies/Ethics-and-Integrity-in-Academic-Research)
+
+----
+
+### Anonymisation
+
+* Remove personal data identifiers (names, postcodes, workplaces, telephone numbers &c.)
+* Aggregate, or reduce, the precision of variables, eg: year of birth rather than birth date
+* Use a general level of geo-coding
+* Timing of anonymisation:
+  * At time of data collection
+  * During elaboration (data processing)
+  * Public version of data can be created
+
+> Fully anonimised data (to the best of one's knowledge) do not fall anymore under GDPR constraints
+
+----
+
+### Pseudonymisation
+
+* Provide justification for why data are not anonymised (eg. follow-up wave of survey)
+* Replace personal identifiers (such as names) with unique identifiers (codes)
+* Store/encrypt pseudonyms separately
+
+> Pseudonymised data can be anonymised by destroying code files and decryption key. Data should be deleted at end of retention period.
 
 ---
 
-## Wrapping up and Open Science
-
-
-----
-
-### A traditional story
-> * A scientist **collects some data** and stores it on a machine that is occasionally backed up by her department. She then **writes or modifies a few small programs** (which also reside on her machine) to analyze that data. Once she has some results, **she writes them up and submits her paper**. She might include her data – a growing number of journals require this – but she probably doesn’t include her code. 
->
-> Time passes…
->
-> * The journal sends her reviews written anonymously by a handful of other people in her field. **She revises her paper to satisfy them, during which time she might also modify the scripts she wrote earlier, and resubmits**.
->
-> More time passes….
->
-> * **The paper is eventually published**. It might include a link to an online copy of her data, but the paper itself will be behind a paywall: only people who have personal or institutional access will be able to read it.
+## A note on transparency, reproducibility and trust
 
 ----
 
-### A revised approach
+### What contributes to building trust in your research?
 
-> * The data that the researcher collects is stored in an **open access repository** (e.g. [Zenodo](https://zenodo.org/) or [FigShare](https://figshare.com/)), possibly as soon as it’s collected, and given its own **Digital Object Identifier (DOI)**.
-> * The researcher creates a new **repository on GitHub** to hold her work.
-> * As she does her analysis, she **pushes changes** to her scripts (and possibly some output files) to that repository.
-> * She also uses the repository for her paper. That repository is then the **hub for collaboration** with her colleagues.
-> * When she’s happy with the state of her paper, **she posts a version to arXiv or some other preprint server** to invite feedback from peers.
-> * Based on that feedback, she may post several revisions before finally submitting her paper to a journal.
-> * **The published paper includes links to her preprint and to her code and data repositories**, which makes it much easier for other scientists to use her work as starting point for their own research.
+_"be as open as possible, and as closed as necessary"_
+
+* The (open) availability of your papers, your data, and your code and their changes over time (e.g. on __GitHub__)
+  * Consider submitting to [Cadmus, the EUI Research Repository](https://cadmus.eui.eu/) (or a disciplinary one)
+* Your DMPs
+* Your research plan (e.g. a Study Pre-Registration)
+
+> ["Transparency, Reproducibility and Impact: Placing Open Science Into Practice"](https://www.eui.eu/Documents/Research/Library/PublishingAndOpenScience/Intro-to-Open-Science-20231025.pdf), Simone Sacchi, CIVICA Training, 25 October 2023
+
+---
+
+## Conclusion and wrap-up
 
 ----
 
-### Takeaways
+### On (Digital) scholarly assets
 
-* GitHub/version control can be an open electronic lab book as part of Open Science workflows
-  * Collect data - store in OA repository
-  * Use GitHub to store work in progress: analysis lab book
-  * Post preprint to preprint server
-* Even if you don't work openly, it's more reproducible (and auditable)
+* Physical objects persist through time and decay (relatively) slowly if the physical environment is appropriate (temperature, light, etc.)
+
+* Digital objects are much more “fragile”: they rely on physical media for storage, computational resources and applications for their appropriate access and use and suffer “technology obsolescence” 
+
+> Both share the issue that without proper (recorded) contextual information their “intellectual content” may be lost over time (Rosetta Stone, anyone?)
+
 ----
 
-### You're at least ready to leave this behind! ;-)
+### What we learned today
 
-![PhD comic: A directory listing with filenames like data_2010.05.28_test.dat, data_2010.05.28_re-test.dat, data_2010.05.28_re-re-test.dat, data_2010.05.28_calibrate.dat, data_2010.05.29_aaarrrgh.dat, data_2010.05.29_WTF.dat, data_2010.05.29_USETHISONE.dat](img/phd052810s.png)
+* Care, care, care about your scholary assets
+* Think about your future self as your first and foremost collaborator
+* Everything you produce has potential future value for you, for the academic community and society
+* There are practices and tools that can help along the way
 
 ---
 
 ## Questions?
 
----
+Simone Sacchi, Research Data Librarian
 
-## Acknowledgement
+Library, European University Institute 
 
-These slides are based on:
-* Leighton Pritchard [SWC Lessons](https://github.com/widdowquinn/Teaching-SWC-Lessons)
-* Library Carpentry: [Introduction to Git](https://librarycarpentry.org/lc-git/)
-* Software Carpentry: [Version Control with Git](https://swcarpentry.github.io/git-novice/)
-
-----
-
-These slides are released under a [Creative Commons Attribution International 4.0](https://creativecommons.org/licenses/by/4.0/) licence. Any feedback and reuse of content is welcome!
-
-* Web version: [https://eui-library.github.io/researchskills-2021-12-01-git/](https://eui-library.github.io/researchskills-2021-12-01-git/)
-* GitHub repo: [https://github.com/EUI-Library/researchskills-2021-12-01-git](https://github.com/EUI-Library/researchskills-2021-12-01-git)
-
----
-
-## Extra stuff
-
-----
-
-Dracula also has to set his favorite text editor, following this table:
-
-| Editor             | Configuration command                            |
-|:-------------------|:-------------------------------------------------|
-| Atom | `$ git config --global core.editor "atom --wait"`|
-| nano | `$ git config --global core.editor "nano -w"`    |
-| Sublime Text (Mac) | `$ git config --global core.editor "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n -w"` |
-| Sublime Text (Win, 64-bit install) | `$ git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"` |
-| Notepad (Win)    | `$ git config --global core.editor "c:/Windows/System32/notepad.exe"`|
-| Notepad++ (Win, 64-bit install)    | `$ git config --global core.editor "'c:/program files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`|
-| Emacs              | `$ git config --global core.editor "emacs"`   |
-| Vim                | `$ git config --global core.editor "vim"`   |
-
-You can reconfigure the editor for Git at any time.
+[simone.sacchi@eui.eu](simone.sacchi@eui.eu)
