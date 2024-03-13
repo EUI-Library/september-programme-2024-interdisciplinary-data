@@ -42,7 +42,7 @@ EUI Library #researchskills session 13/03/2024
 
 ---
 
-# Introduction
+## Introduction
 
 ----
 
@@ -160,10 +160,10 @@ PhD Comics [FINAL.doc](https://phdcomics.com/comics/archive.php?comicid=1531)
 
 ---
 
-### Version control with `git` and `GitHub`
+## Version control with `git` and `GitHub`
 
 ----
-## Don't be scared...
+### Don't be scared...
 
 ![XKCD comic - A: This is git. It tracks collaborative work on projects through a beautiful distributed graph theory tree mode; B: Cool. How do we use it?; A: No idea. Just memorise these shell commands and type them to sync up. If you get errors, save your work elsewhere, delete the project, and download a fresh copy.](img/git.png)
 
@@ -250,6 +250,18 @@ GitHub Saved My Life!
 * [Social Science Data Lab](https://github.com/socialsciencedatalab) (Mannheim Centre for European Social Research)
 
 > There are many wonderful online resources!
+
+---
+
+## Brief on managing image collections
+
+If you are managing image collections as data consider using __Tropy__
+* Built with research in mind
+* Build, manage and organize your image library
+* Describe your sources, annotate your photos
+
+> Download [Tropy](https://tropy.org/) and watch the EUI Library training on YoyTube: ["Introduction to Tropy"](https://youtu.be/yuxlkRlFwhI?si=g2MppxeMhU2csgxx)
+
 
 ---
 
@@ -373,3 +385,10 @@ Simone Sacchi, Research Data Librarian
 Library, European University Institute 
 
 [simone.sacchi@eui.eu](simone.sacchi@eui.eu)
+
+---
+
+## Slides are available!
+
+* Web version: [https://eui-library.github.io/researchskills-2024-3-13-manage-research-outputs/](https://eui-library.github.io/researchskills-2024-3-13-manage-research-outputs/)
+* GitHub repo: [https://github.com/EUI-Library/researchskills-2024-3-13-manage-research-outputs](https://github.com/EUI-Library/researchskills-2024-3-13-manage-research-outputs)
