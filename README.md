@@ -7,14 +7,6 @@ These slides are released under a [Creative Commons Attribution International 4.
 * Web version: TBD
 * GitHub repo: [https://github.com/EUI-Library/researchskills-2024-3-13-manage-research-outputs](https://github.com/EUI-Library/researchskills-2024-3-13-manage-research-outputs)
 
-## Acknowledgement
-These slides are based on:
-* Leighton Pritchard [SWC Lessons](https://github.com/widdowquinn/Teaching-SWC-Lessons)
-* Library Carpentry: [Introduction to Git](https://librarycarpentry.org/lc-git/)
-* Software Carpentry: [Version Control with Git](https://swcarpentry.github.io/git-novice/)
-
-Full Acknowledgement is given!
-
 Slides are developed in [Reveal.js](https://github.com/hakimel/reveal.js). Use this [template](https://github.com/pacharanero/create-new-revealjs-template) which implements the Github submodule feature to avoid duplicating the Reveal.js code in every repo. The slides have been built locally with  [reveal-md](https://github.com/webpro/reveal-md)
 
 After cloning and checking out the repository, run the follwing reveal-md command in the repository root directory to build the slides locally (it will open them in your default browser):
