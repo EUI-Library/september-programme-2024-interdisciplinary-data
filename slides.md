@@ -1,23 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-    <title>reveal-md</title>
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="./dist/reset.css" />
-    <link rel="stylesheet" href="./dist/reveal.css" />
-    <link rel="stylesheet" href="./_assets/theme/eui.css" id="theme" />
-    <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
-
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section data-markdown data-separator="\r?\n---\r?\n" data-separator-vertical="\r?\n----\r?\n">
-          <textarea data-template>
-            ## Interdisciplinary introduction to Data Resources and Services
+## Interdisciplinary introduction to Data Resources and Services
 #### EUI September Programme 2024
 
 &nbsp;
@@ -33,6 +14,16 @@ EUI September Programme 2024, 11/09/2024
 ---
 
 ## Before we start
+
+----
+
+### Welcome to the EUI!
+
+I am Simone Sacchi, Research Data Librarian
+
+[simone.sacchi@eui.eu](mailto:simone.sacchi@eui.eu) - [resdata@eui.eu](mailto:resdata@eui.eu)
+
+You can find me in Library middle floor, room BF086
 
 ----
 
@@ -57,14 +48,38 @@ EUI September Programme 2024, 11/09/2024
 
 ----
 
-### (Digital) scholarly asset: what the heck is that?
+### Research Data Service: where exactly?
 
-- Anything collected/generated/produced during a research endeavour or other academic practices
-- Some outputs are transitory in nature (e.g. raw data, drafts etc.)
-- Some are intended to be “final” (a published paper)
-- All go through changes, revisions, updates, etc.
+<img src="img/01-home-library.png" alt="isolated" width="80%" />
 
-> N.B. scholarly assets, research outputs, etc. use the term you prefer!
+> [https://www.eui.eu/en/services/library](https://www.eui.eu/en/services/library){:target="_blank"}
+
+----
+
+### Research Data Services: home
+
+<img src="img/02-home-data-servises.png" alt="isolated" width="80%" />
+
+> [https://www.eui.eu/Research/Library/ResearchDataServices](https://www.eui.eu/Research/Library/ResearchDataServices){:target="_blank"}
+
+----
+
+### Research Data Services: lifecycle model
+
+<img src="img/03-lifecycle.png" alt="isolated" width="100%" />
+
+> [https://www.eui.eu/Research/Library/ResearchDataServices](https://www.eui.eu/Research/Library/ResearchDataServices){:target="_blank"}
+
+
+---
+
+## Data discovery
+
+----
+
+### EUI Library Data Portal
+
+[Data Portal](https://www.eui.eu/Research/Library/ResearchGuides/Economics/Statistics/DataPortal)
 
 ----
 
@@ -403,77 +418,3 @@ Library, European University Institute
 
 * Web version: [https://eui-library.github.io/researchskills-2024-3-13-manage-research-outputs/](https://eui-library.github.io/researchskills-2024-3-13-manage-research-outputs/)
 * GitHub repo: [https://github.com/EUI-Library/researchskills-2024-3-13-manage-research-outputs](https://github.com/EUI-Library/researchskills-2024-3-13-manage-research-outputs)
-          </textarea>
-        </section>
-      </div>
-    </div>
-
-    <script src="./dist/reveal.js"></script>
-
-    <script src="./mermaid/dist/mermaid.min.js"></script>
-
-    <script src="./plugin/markdown/markdown.js"></script>
-    <script src="./plugin/highlight/highlight.js"></script>
-    <script src="./plugin/zoom/zoom.js"></script>
-    <script src="./plugin/notes/notes.js"></script>
-    <script src="./plugin/math/math.js"></script>
-    <script>
-      function extend() {
-        var target = {};
-        for (var i = 0; i < arguments.length; i++) {
-          var source = arguments[i];
-          for (var key in source) {
-            if (source.hasOwnProperty(key)) {
-              target[key] = source[key];
-            }
-          }
-        }
-        return target;
-      }
-
-      // default options to init reveal.js
-      var defaultOptions = {
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-        transition: 'default', // none/fade/slide/convex/concave/zoom
-        slideNumber: true,
-        highlight: {
-          highlightOnLoad: false
-        },
-        plugins: [
-          RevealMarkdown,
-          RevealHighlight,
-          RevealZoom,
-          RevealNotes,
-          RevealMath
-        ]
-      };
-
-      // options from URL query string
-      var queryOptions = Reveal().getQueryHash() || {};
-
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":false,"margin":0.1,"width":1280,"height":800,"_":["slides.md"],"theme":"theme/eui.css","static":true}, queryOptions);
-    </script>
-
-
-    <script>
-      Reveal.initialize(options);
-      Reveal.addEventListener('ready', function (event) {
-        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
-        const hlp = Reveal.getPlugin('highlight');
-        blocks.forEach(hlp.highlightBlock);
-      });
-    </script>
-
-    <script>
-      const mermaidOptions = extend({ startOnLoad: false }, {});
-      mermaid.startOnLoad = false;
-      mermaid.initialize(mermaidOptions);
-      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
-      Reveal.addEventListener('ready', cb);
-      Reveal.addEventListener('slidetransitionend', cb);
-    </script>
-  </body>
-</html>
