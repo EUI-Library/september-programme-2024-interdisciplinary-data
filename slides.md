@@ -35,15 +35,6 @@ You can find me in Library middle floor, room BF086
 
 ---
 
-## Agenda for today
-- Introduction
-- Data discovery and generation 
-- Data management and curation
-- Data protection and processing of sensitive data
-- 
-
----
-
 ## Introduction
 
 ----
