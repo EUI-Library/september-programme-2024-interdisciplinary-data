@@ -4,8 +4,8 @@ Instructor: @simosacchi
 
 These slides are released under a [Creative Commons Attribution International 4.0](https://creativecommons.org/licenses/by/4.0/) licence. Any feedback and reuse of content is welcome!
 
-* Web version: TBD
-* GitHub repo: [https://github.com/EUI-Library/september-programme-2024-interdisciplinary-data](https://github.com/EUI-Library/september-programme-2024-interdisciplinary-data)
+* Web version: [https://eui-library.github.io/september-programme-2024-interdisciplinary-data/](https://eui-library.github.io/september-programme-2024-interdisciplinary-data/)
+* GitHub repo (this page): [https://github.com/EUI-Library/september-programme-2024-interdisciplinary-data](https://github.com/EUI-Library/september-programme-2024-interdisciplinary-data)
 
 Slides are developed in [Reveal.js](https://github.com/hakimel/reveal.js). Use this [template](https://github.com/pacharanero/create-new-revealjs-template) which implements the Github submodule feature to avoid duplicating the Reveal.js code in every repo. The slides have been built locally with  [reveal-md](https://github.com/webpro/reveal-md)
 
