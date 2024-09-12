@@ -16,6 +16,6 @@ After cloning and checking out the repository, run the follwing reveal-md comman
 Run the following command to build a self-contained version of the slides to
 publish on you website (or as Github pages):
 
-`reveal-md slides_git.md --theme=theme/eui.css --static`
+`reveal-md slides_git.md --theme=theme/eui.css --static ./docs`
 
 For questions and feedback open a Github issue in the repo or [get in touch](https://github.com/simosacchi)
