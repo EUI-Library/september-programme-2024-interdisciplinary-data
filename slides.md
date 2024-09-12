@@ -137,9 +137,9 @@ The EUI hosts on its premises a series of datasets for which specific access con
 
 - In some instances, it may be possible for EUI members to obtain access via library consortia. 
 
-::: {.callout-caution}
-Some sociological, qualitative and micro geo-coded data can only be accessed at issuers' secure on-site facilities.
-::: 
+
+> Some sociological, qualitative and micro geo-coded data can only be accessed at issuers' secure on-site facilities.
+
 
 ----
 
@@ -313,6 +313,7 @@ The [EUI ICT Service](https://www.eui.eu/en/services/ict-service) provides state
 PhD Comics [FINAL.doc](https://phdcomics.com/comics/archive.php?comicid=1531)
 
 ----
+
 ### The solution: Version Control Systems (e.g. Git)
 
 * You can record who made which changes, and when
